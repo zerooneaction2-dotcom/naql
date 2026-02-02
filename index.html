@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head><meta charset="UTF-8"></head>
+<body>
+    <h1 style="color: blue;">نظام التحقق من البطاقة</h1>
+    <div id="data"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const info = urlParams.get('info');
+        if(info) { document.getElementById('data').innerHTML = "<h2>بيانات البطاقة: " + info + "</h2>"; }
+    </script>
+</body>
+</html>
